@@ -1,0 +1,11 @@
+C:\Users\USER\Desktop\FINAL YEAR HELL YEAH\COURSE\Software Design\Vector\3D Vector\bin\Debug\3D Vector.exe.config
+C:\Users\USER\Desktop\FINAL YEAR HELL YEAH\COURSE\Software Design\Vector\3D Vector\bin\Debug\3D Vector.exe
+C:\Users\USER\Desktop\FINAL YEAR HELL YEAH\COURSE\Software Design\Vector\3D Vector\bin\Debug\3D Vector.pdb
+C:\Users\USER\Desktop\FINAL YEAR HELL YEAH\COURSE\Software Design\Vector\3D Vector\obj\Debug\3D Vector.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\FINAL YEAR HELL YEAH\COURSE\Software Design\Vector\3D Vector\obj\Debug\3D Vector.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Desktop\FINAL YEAR HELL YEAH\COURSE\Software Design\Vector\3D Vector\obj\Debug\_3D_Vector.Form3DVector.resources
+C:\Users\USER\Desktop\FINAL YEAR HELL YEAH\COURSE\Software Design\Vector\3D Vector\obj\Debug\_3D_Vector.Properties.Resources.resources
+C:\Users\USER\Desktop\FINAL YEAR HELL YEAH\COURSE\Software Design\Vector\3D Vector\obj\Debug\3D Vector.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\FINAL YEAR HELL YEAH\COURSE\Software Design\Vector\3D Vector\obj\Debug\3D Vector.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\FINAL YEAR HELL YEAH\COURSE\Software Design\Vector\3D Vector\obj\Debug\3D Vector.exe
+C:\Users\USER\Desktop\FINAL YEAR HELL YEAH\COURSE\Software Design\Vector\3D Vector\obj\Debug\3D Vector.pdb
