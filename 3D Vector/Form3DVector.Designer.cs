@@ -33,24 +33,23 @@
             this.labelV1 = new System.Windows.Forms.Label();
             this.labelV2 = new System.Windows.Forms.Label();
             this.labelMsg1 = new System.Windows.Forms.Label();
-            this.Ui = new System.Windows.Forms.TextBox();
-            this.labelMsg2 = new System.Windows.Forms.Label();
-            this.labelAnswer = new System.Windows.Forms.Label();
-            this.Uj = new System.Windows.Forms.TextBox();
-            this.Uk = new System.Windows.Forms.TextBox();
+            this.VecU1 = new System.Windows.Forms.TextBox();
+            this.lblResult = new System.Windows.Forms.Label();
             this.BtnAdd = new System.Windows.Forms.RadioButton();
             this.BtnDot = new System.Windows.Forms.RadioButton();
             this.BtnSub = new System.Windows.Forms.RadioButton();
             this.BtnCross = new System.Windows.Forms.RadioButton();
-            this.labelUi = new System.Windows.Forms.Label();
-            this.labelUj = new System.Windows.Forms.Label();
-            this.labelUk = new System.Windows.Forms.Label();
-            this.labelVk = new System.Windows.Forms.Label();
-            this.labelVj = new System.Windows.Forms.Label();
-            this.labelVi = new System.Windows.Forms.Label();
-            this.Vk = new System.Windows.Forms.TextBox();
-            this.Vj = new System.Windows.Forms.TextBox();
-            this.Vi = new System.Windows.Forms.TextBox();
+            this.VecU2 = new System.Windows.Forms.TextBox();
+            this.VecU3 = new System.Windows.Forms.TextBox();
+            this.VecV1 = new System.Windows.Forms.TextBox();
+            this.VecV2 = new System.Windows.Forms.TextBox();
+            this.VecV3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,8 +59,9 @@
             this.panelTitleBar.Controls.Add(this.lblTitle);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
+            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(2);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(1016, 94);
+            this.panelTitleBar.Size = new System.Drawing.Size(762, 76);
             this.panelTitleBar.TabIndex = 1;
             // 
             // lblTitle
@@ -70,9 +70,10 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Cascadia Code", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTitle.Location = new System.Drawing.Point(426, 23);
+            this.lblTitle.Location = new System.Drawing.Point(320, 19);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(161, 37);
+            this.lblTitle.Size = new System.Drawing.Size(130, 29);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "3D VECTOR";
             // 
@@ -80,9 +81,10 @@
             // 
             this.labelV1.AutoSize = true;
             this.labelV1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelV1.Location = new System.Drawing.Point(226, 170);
+            this.labelV1.Location = new System.Drawing.Point(170, 138);
+            this.labelV1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelV1.Name = "labelV1";
-            this.labelV1.Size = new System.Drawing.Size(131, 32);
+            this.labelV1.Size = new System.Drawing.Size(105, 26);
             this.labelV1.TabIndex = 2;
             this.labelV1.Text = "Vector U";
             // 
@@ -90,9 +92,10 @@
             // 
             this.labelV2.AutoSize = true;
             this.labelV2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelV2.Location = new System.Drawing.Point(665, 170);
+            this.labelV2.Location = new System.Drawing.Point(499, 138);
+            this.labelV2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelV2.Name = "labelV2";
-            this.labelV2.Size = new System.Drawing.Size(130, 32);
+            this.labelV2.Size = new System.Drawing.Size(104, 26);
             this.labelV2.TabIndex = 3;
             this.labelV2.Text = "Vector V";
             // 
@@ -103,95 +106,74 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelMsg1.AutoSize = true;
             this.labelMsg1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMsg1.Location = new System.Drawing.Point(190, 121);
+            this.labelMsg1.Location = new System.Drawing.Point(142, 98);
+            this.labelMsg1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMsg1.Name = "labelMsg1";
-            this.labelMsg1.Size = new System.Drawing.Size(654, 20);
+            this.labelMsg1.Size = new System.Drawing.Size(553, 17);
             this.labelMsg1.TabIndex = 4;
             this.labelMsg1.Text = "Please Insert The Input According to i, j, k Coordinates Respectively. (Example: " +
     "1, 2, 3)";
             // 
-            // Ui
+            // VecU1
             // 
-            this.Ui.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Ui.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ui.Location = new System.Drawing.Point(137, 205);
-            this.Ui.Name = "Ui";
-            this.Ui.Size = new System.Drawing.Size(78, 30);
-            this.Ui.TabIndex = 5;
-            this.Ui.TextChanged += new System.EventHandler(this.Ui_TextChanged);
+            this.VecU1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.VecU1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VecU1.Location = new System.Drawing.Point(137, 166);
+            this.VecU1.Margin = new System.Windows.Forms.Padding(2);
+            this.VecU1.Name = "VecU1";
+            this.VecU1.Size = new System.Drawing.Size(41, 26);
+            this.VecU1.TabIndex = 5;
             // 
-            // labelMsg2
+            // lblResult
             // 
-            this.labelMsg2.AutoSize = true;
-            this.labelMsg2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMsg2.Location = new System.Drawing.Point(147, 268);
-            this.labelMsg2.Name = "labelMsg2";
-            this.labelMsg2.Size = new System.Drawing.Size(82, 20);
-            this.labelMsg2.TabIndex = 7;
-            this.labelMsg2.Text = "Message:";
-            // 
-            // labelAnswer
-            // 
-            this.labelAnswer.AutoSize = true;
-            this.labelAnswer.BackColor = System.Drawing.SystemColors.Window;
-            this.labelAnswer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelAnswer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.labelAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAnswer.Location = new System.Drawing.Point(449, 503);
-            this.labelAnswer.Name = "labelAnswer";
-            this.labelAnswer.Size = new System.Drawing.Size(102, 27);
-            this.labelAnswer.TabIndex = 8;
-            this.labelAnswer.Text = "ANSWER";
-            // 
-            // Uj
-            // 
-            this.Uj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Uj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Uj.Location = new System.Drawing.Point(247, 205);
-            this.Uj.Name = "Uj";
-            this.Uj.Size = new System.Drawing.Size(78, 30);
-            this.Uj.TabIndex = 9;
-            // 
-            // Uk
-            // 
-            this.Uk.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Uk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Uk.Location = new System.Drawing.Point(357, 205);
-            this.Uk.Name = "Uk";
-            this.Uk.Size = new System.Drawing.Size(78, 30);
-            this.Uk.TabIndex = 10;
+            this.lblResult.AutoSize = true;
+            this.lblResult.BackColor = System.Drawing.SystemColors.Window;
+            this.lblResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblResult.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.Location = new System.Drawing.Point(337, 409);
+            this.lblResult.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(82, 22);
+            this.lblResult.TabIndex = 8;
+            this.lblResult.Text = "ANSWER";
             // 
             // BtnAdd
             // 
             this.BtnAdd.AutoSize = true;
             this.BtnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAdd.Location = new System.Drawing.Point(449, 287);
+            this.BtnAdd.Location = new System.Drawing.Point(337, 233);
+            this.BtnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(90, 24);
+            this.BtnAdd.Size = new System.Drawing.Size(77, 21);
             this.BtnAdd.TabIndex = 14;
             this.BtnAdd.TabStop = true;
             this.BtnAdd.Text = "Addition";
             this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.CheckedChanged += new System.EventHandler(this.BtnAdd_CheckedChanged);
             // 
             // BtnDot
             // 
             this.BtnDot.AutoSize = true;
             this.BtnDot.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDot.Location = new System.Drawing.Point(449, 371);
+            this.BtnDot.Location = new System.Drawing.Point(337, 301);
+            this.BtnDot.Margin = new System.Windows.Forms.Padding(2);
             this.BtnDot.Name = "BtnDot";
-            this.BtnDot.Size = new System.Drawing.Size(120, 24);
+            this.BtnDot.Size = new System.Drawing.Size(101, 21);
             this.BtnDot.TabIndex = 15;
             this.BtnDot.TabStop = true;
             this.BtnDot.Text = "Dot Product";
             this.BtnDot.UseVisualStyleBackColor = true;
+            this.BtnDot.CheckedChanged += new System.EventHandler(this.BtnDot_CheckedChanged);
             // 
             // BtnSub
             // 
             this.BtnSub.AutoSize = true;
             this.BtnSub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSub.Location = new System.Drawing.Point(449, 332);
+            this.BtnSub.Location = new System.Drawing.Point(337, 267);
+            this.BtnSub.Margin = new System.Windows.Forms.Padding(2);
             this.BtnSub.Name = "BtnSub";
-            this.BtnSub.Size = new System.Drawing.Size(115, 24);
+            this.BtnSub.Size = new System.Drawing.Size(98, 21);
             this.BtnSub.TabIndex = 16;
             this.BtnSub.TabStop = true;
             this.BtnSub.Text = "Subtraction";
@@ -202,128 +184,153 @@
             // 
             this.BtnCross.AutoSize = true;
             this.BtnCross.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCross.Location = new System.Drawing.Point(449, 416);
+            this.BtnCross.Location = new System.Drawing.Point(337, 338);
+            this.BtnCross.Margin = new System.Windows.Forms.Padding(2);
             this.BtnCross.Name = "BtnCross";
-            this.BtnCross.Size = new System.Drawing.Size(138, 24);
+            this.BtnCross.Size = new System.Drawing.Size(115, 21);
             this.BtnCross.TabIndex = 17;
             this.BtnCross.TabStop = true;
             this.BtnCross.Text = "Cross Product";
             this.BtnCross.UseVisualStyleBackColor = true;
+            this.BtnCross.CheckedChanged += new System.EventHandler(this.BtnCross_CheckedChanged);
             // 
-            // labelUi
+            // VecU2
             // 
-            this.labelUi.AutoSize = true;
-            this.labelUi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUi.Location = new System.Drawing.Point(223, 208);
-            this.labelUi.Name = "labelUi";
-            this.labelUi.Size = new System.Drawing.Size(16, 25);
-            this.labelUi.TabIndex = 18;
-            this.labelUi.Text = "i";
+            this.VecU2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.VecU2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VecU2.Location = new System.Drawing.Point(198, 166);
+            this.VecU2.Margin = new System.Windows.Forms.Padding(2);
+            this.VecU2.Name = "VecU2";
+            this.VecU2.Size = new System.Drawing.Size(41, 26);
+            this.VecU2.TabIndex = 19;
             // 
-            // labelUj
+            // VecU3
             // 
-            this.labelUj.AutoSize = true;
-            this.labelUj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUj.Location = new System.Drawing.Point(333, 206);
-            this.labelUj.Name = "labelUj";
-            this.labelUj.Size = new System.Drawing.Size(16, 25);
-            this.labelUj.TabIndex = 19;
-            this.labelUj.Text = "j";
+            this.VecU3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.VecU3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VecU3.Location = new System.Drawing.Point(262, 166);
+            this.VecU3.Margin = new System.Windows.Forms.Padding(2);
+            this.VecU3.Name = "VecU3";
+            this.VecU3.Size = new System.Drawing.Size(41, 26);
+            this.VecU3.TabIndex = 20;
             // 
-            // labelUk
+            // VecV1
             // 
-            this.labelUk.AutoSize = true;
-            this.labelUk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUk.Location = new System.Drawing.Point(443, 207);
-            this.labelUk.Name = "labelUk";
-            this.labelUk.Size = new System.Drawing.Size(22, 25);
-            this.labelUk.TabIndex = 20;
-            this.labelUk.Text = "k";
+            this.VecV1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.VecV1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VecV1.Location = new System.Drawing.Point(463, 166);
+            this.VecV1.Margin = new System.Windows.Forms.Padding(2);
+            this.VecV1.Name = "VecV1";
+            this.VecV1.Size = new System.Drawing.Size(41, 26);
+            this.VecV1.TabIndex = 21;
             // 
-            // labelVk
+            // VecV2
             // 
-            this.labelVk.AutoSize = true;
-            this.labelVk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVk.Location = new System.Drawing.Point(882, 207);
-            this.labelVk.Name = "labelVk";
-            this.labelVk.Size = new System.Drawing.Size(22, 25);
-            this.labelVk.TabIndex = 26;
-            this.labelVk.Text = "k";
+            this.VecV2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.VecV2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VecV2.Location = new System.Drawing.Point(524, 166);
+            this.VecV2.Margin = new System.Windows.Forms.Padding(2);
+            this.VecV2.Name = "VecV2";
+            this.VecV2.Size = new System.Drawing.Size(41, 26);
+            this.VecV2.TabIndex = 22;
             // 
-            // labelVj
+            // VecV3
             // 
-            this.labelVj.AutoSize = true;
-            this.labelVj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVj.Location = new System.Drawing.Point(772, 206);
-            this.labelVj.Name = "labelVj";
-            this.labelVj.Size = new System.Drawing.Size(16, 25);
-            this.labelVj.TabIndex = 25;
-            this.labelVj.Text = "j";
+            this.VecV3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.VecV3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VecV3.Location = new System.Drawing.Point(585, 166);
+            this.VecV3.Margin = new System.Windows.Forms.Padding(2);
+            this.VecV3.Name = "VecV3";
+            this.VecV3.Size = new System.Drawing.Size(41, 26);
+            this.VecV3.TabIndex = 23;
             // 
-            // labelVi
+            // label1
             // 
-            this.labelVi.AutoSize = true;
-            this.labelVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVi.Location = new System.Drawing.Point(662, 208);
-            this.labelVi.Name = "labelVi";
-            this.labelVi.Size = new System.Drawing.Size(16, 25);
-            this.labelVi.TabIndex = 24;
-            this.labelVi.Text = "i";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(182, 170);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 20);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "i";
             // 
-            // Vk
+            // label2
             // 
-            this.Vk.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Vk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Vk.Location = new System.Drawing.Point(796, 205);
-            this.Vk.Name = "Vk";
-            this.Vk.Size = new System.Drawing.Size(78, 30);
-            this.Vk.TabIndex = 23;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(244, 169);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(13, 20);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "j";
             // 
-            // Vj
+            // label3
             // 
-            this.Vj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Vj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Vj.Location = new System.Drawing.Point(686, 205);
-            this.Vj.Name = "Vj";
-            this.Vj.Size = new System.Drawing.Size(78, 30);
-            this.Vj.TabIndex = 22;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(307, 170);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(18, 20);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "k";
             // 
-            // Vi
+            // label4
             // 
-            this.Vi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Vi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Vi.Location = new System.Drawing.Point(576, 205);
-            this.Vi.Name = "Vi";
-            this.Vi.Size = new System.Drawing.Size(78, 30);
-            this.Vi.TabIndex = 21;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(508, 170);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(13, 20);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "i";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(568, 169);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(13, 20);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "j";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(629, 169);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(18, 20);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "k";
             // 
             // Form3DVector
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 638);
-            this.Controls.Add(this.labelVk);
-            this.Controls.Add(this.labelVj);
-            this.Controls.Add(this.labelVi);
-            this.Controls.Add(this.Vk);
-            this.Controls.Add(this.Vj);
-            this.Controls.Add(this.Vi);
-            this.Controls.Add(this.labelUk);
-            this.Controls.Add(this.labelUj);
-            this.Controls.Add(this.labelUi);
+            this.ClientSize = new System.Drawing.Size(762, 518);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.VecV3);
+            this.Controls.Add(this.VecV2);
+            this.Controls.Add(this.VecV1);
+            this.Controls.Add(this.VecU3);
+            this.Controls.Add(this.VecU2);
             this.Controls.Add(this.BtnCross);
             this.Controls.Add(this.BtnSub);
             this.Controls.Add(this.BtnDot);
             this.Controls.Add(this.BtnAdd);
-            this.Controls.Add(this.Uk);
-            this.Controls.Add(this.Uj);
-            this.Controls.Add(this.labelAnswer);
-            this.Controls.Add(this.labelMsg2);
-            this.Controls.Add(this.Ui);
+            this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.VecU1);
             this.Controls.Add(this.labelMsg1);
             this.Controls.Add(this.labelV2);
             this.Controls.Add(this.labelV1);
             this.Controls.Add(this.panelTitleBar);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form3DVector";
             this.Text = "3D Vector Calculator";
             this.panelTitleBar.ResumeLayout(false);
@@ -339,24 +346,23 @@
         private System.Windows.Forms.Label labelV1;
         private System.Windows.Forms.Label labelV2;
         private System.Windows.Forms.Label labelMsg1;
-        private System.Windows.Forms.TextBox Ui;
-        private System.Windows.Forms.Label labelMsg2;
-        private System.Windows.Forms.Label labelAnswer;
-        private System.Windows.Forms.TextBox Uj;
-        private System.Windows.Forms.TextBox Uk;
+        private System.Windows.Forms.TextBox VecU1;
+        private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.RadioButton BtnAdd;
         private System.Windows.Forms.RadioButton BtnDot;
         private System.Windows.Forms.RadioButton BtnSub;
         private System.Windows.Forms.RadioButton BtnCross;
-        private System.Windows.Forms.Label labelUi;
-        private System.Windows.Forms.Label labelUj;
-        private System.Windows.Forms.Label labelUk;
-        private System.Windows.Forms.Label labelVk;
-        private System.Windows.Forms.Label labelVj;
-        private System.Windows.Forms.Label labelVi;
-        private System.Windows.Forms.TextBox Vk;
-        private System.Windows.Forms.TextBox Vj;
-        private System.Windows.Forms.TextBox Vi;
+        private System.Windows.Forms.TextBox VecU2;
+        private System.Windows.Forms.TextBox VecU3;
+        private System.Windows.Forms.TextBox VecV1;
+        private System.Windows.Forms.TextBox VecV2;
+        private System.Windows.Forms.TextBox VecV3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 

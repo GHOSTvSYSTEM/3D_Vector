@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_3DVector.cs" />
     <EmbeddedResource Include="Form3DVector.resx">
       <DependentUpon>Form3DVector.cs</DependentUpon>
     </EmbeddedResource>
